@@ -1,0 +1,15 @@
+.product-card {
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 8px; /* Ensure border radius is applied */
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%; /* Make the image fill the width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Match the card's border radius */
+}

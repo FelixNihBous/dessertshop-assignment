@@ -1,0 +1,34 @@
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(20, 50%, 98%);
+  }
+  
+  .app {
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    padding-right: 0px;
+    width: 50%;;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: hsl(14, 25%, 40%);
+    margin-bottom: 0;
+    padding-left: 220px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .app {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }

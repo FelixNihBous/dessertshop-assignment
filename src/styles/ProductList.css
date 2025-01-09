@@ -1,0 +1,15 @@
+.wrapper-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width to allow for 3 items */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the card list */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.card-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    overflow: hidden; /* Prevent overflow */
+}
