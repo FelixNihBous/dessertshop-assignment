@@ -1,8 +1,15 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     font-family: 'Red Hat Text', sans-serif;
     margin: 0;
     padding: 0;
     background-color: hsl(20, 50%, 98%);
+    display: flex;
+  flex-direction: column;
   }
   
   .app {
@@ -10,7 +17,7 @@ body {
     padding: 0px;
     display: flex;
     padding-right: 0px;
-    width: 50%;;
+    width: 100%;;
   }
   
   h1 {
@@ -24,6 +31,10 @@ body {
   @media (max-width: 768px) {
     .app {
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-wrapper {
       display: flex;
       flex-direction: column;
     }

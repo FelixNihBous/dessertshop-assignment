@@ -16,16 +16,14 @@ const ProductCard = ({ product, addToCart, isInCart }) => {
       <h3>{product.name}</h3>
       <p>${product.price.toFixed(2)}</p>
       <div className="quantity-controls">
-        <button onClick={() => {
+        <button className='addbutton' onClick={() => {
           const newQuantity = quantity > 0 ? quantity - 1 : 0;
           setQuantity(newQuantity);
-          handleAddToCart(); // Update cart when quantity is changed
         }}>-</button>
         <span>{quantity}</span>
-        <button onClick={() => {
+        <button className='addbutton' onClick={() => {
           const newQuantity = quantity + 1;
           setQuantity(newQuantity);
-          handleAddToCart(); // Update cart when quantity is changed
         }}>+</button>
       </div>
       <button 

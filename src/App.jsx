@@ -35,8 +35,8 @@ const App = () => {
         <h1>Dessert Shop</h1>
         <div className="app">
           <ProductList addToCart={addToCart} />
+          <Cart cart={cart} removeFromCart={removeFromCart} resetCart={resetCart} />
         </div>
-        <Cart cart={cart} removeFromCart={removeFromCart} resetCart={resetCart} />
       </div>
     </>
   );

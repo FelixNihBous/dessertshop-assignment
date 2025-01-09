@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Cart.css';
 import Modal from './Modal'; // Import the modal component
 
-const Cart = ({ cart, removeFromCart }) => {
+const Cart = ({ cart, removeFromCart, resetCart }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 
   // Calculate the total price of items in the cart
@@ -15,7 +15,7 @@ const Cart = ({ cart, removeFromCart }) => {
   };
 
   const handleStartNewOrder = () => {
-    // Reset cart data logic here
+    resetCart(); // Call the resetCart function to clear the cart
     // For example, you might want to clear the cart state in the parent component
     setIsModalOpen(false); // Close the modal
   };

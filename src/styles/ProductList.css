@@ -13,3 +13,10 @@
     grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
     overflow: hidden; /* Prevent overflow */
 }
+
+@media (max-width: 768px) {
+    .card-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
